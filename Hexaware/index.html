@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recruiting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Smart Recruiting Platform</h1>
+
+    <div id="post-job">
+        <h2>Post a Job</h2>
+        <form id="jobForm">
+            <input type="text" id="title" placeholder="Job Title" required><br>
+            <input type="text" id="company" placeholder="Company Name" required><br>
+            <textarea id="description" placeholder="Job Description" required></textarea><br>
+            <button type="submit">Post Job</button>
+        </form>
+    </div>
+
+    <div id="jobs">
+        <h2>Available Jobs</h2>
+        <ul id="jobList"></ul>
+    </div>
+
+    <div id="apply-job">
+        <h2>Apply for a Job</h2>
+        <form id="applicationForm">
+            <input type="text" id="applicantName" placeholder="Your Name" required><br>
+            <input type="text" id="jobId" placeholder="Job ID" required><br>
+            <textarea id="coverLetter" placeholder="Cover Letter" required></textarea><br>
+            <button type="submit">Apply</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
